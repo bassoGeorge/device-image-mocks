@@ -22,9 +22,6 @@ body {
 .device.focus hr {
     display: none;
 }
-.device.focus .mock {
-    transform: scale(2);
-}
 
 .mock {
     display: inline-block;
