@@ -27,7 +27,13 @@ body {
 }
 
 
-.mock-image {
+.mock-image-portrait {
     background-image: url("../images/feature.jpg");
     background-size: cover;
+}
+
+
+.controls {
+    text-align: center;
+    margin-bottom: 50px;
 }

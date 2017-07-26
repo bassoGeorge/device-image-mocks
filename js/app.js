@@ -9,8 +9,8 @@ $(function(){
 
         var deviceRow = $("<div>");
 
-        var portrait = $("<div>", { class: "mock mock-image" });
-        var landscape = portrait.clone();
+        var portrait = $("<div>", { class: "mock mock-image-portrait" });
+        var landscape = $("<div>", { class: "mock mock-image-landscape" });
 
         portrait.css({
             width: device.w,
@@ -27,5 +27,17 @@ $(function(){
         section.append(deviceRow);
         section.append($("<hr/>"));
         $("#devices").append(section);
+
     });
+
+    $("#portrait-toggle").click(function(){
+        $(".mock-image-portrait").toggle();
+    });
+
+    $("#landscape-toggle").click(function(){
+        $(".mock-image-landscape").toggle();
+    });
+
+    $(".mock-image-landscape").hide();
+
 });
