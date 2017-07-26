@@ -15,12 +15,29 @@ body {
     text-align: center;
 }
 
+.device.focus {
+    width: 100%;
+    margin-bottom: 500px;
+}
+.device.focus hr {
+    display: none;
+}
+.device.focus .mock {
+    transform: scale(2);
+}
+
 .mock {
     display: inline-block;
     background: #e1e1e1;
     border: 1px solid navy;
     vertical-align: middle;
+    /* transition: transform 300ms ease-in-out; */
+    transform-origin: center top;
 }
+
+/* .mock:hover { */
+/*     transform: scale(2); */
+/* } */
 
 .mock + .mock {
     margin-left: 40px;
@@ -36,4 +53,12 @@ body {
 .controls {
     text-align: center;
     margin-bottom: 50px;
+}
+
+.device.focus-mode {
+    display: none;
+}
+
+.device.focus-mode.focus {
+    display: block;
 }
