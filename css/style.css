@@ -1,0 +1,33 @@
+/*****************************************************************************/
+/*                          Styling for device-mocks                         */
+/*****************************************************************************/
+
+html, body {
+    height: 100%;
+}
+
+body {
+    padding: 40px;
+    margin: 0;
+}
+
+.device {
+    text-align: center;
+}
+
+.mock {
+    display: inline-block;
+    background: #e1e1e1;
+    border: 1px solid navy;
+    vertical-align: middle;
+}
+
+.mock + .mock {
+    margin-left: 40px;
+}
+
+
+.mock-image {
+    background-image: url("../images/feature.jpg");
+    background-size: cover;
+}
